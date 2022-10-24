@@ -5,7 +5,7 @@ import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 
 const name = "Dimterion";
-export const siteTitle = "Next.js Sample Website";
+export const siteTitle = "Dimterion's blog";
 
 export default function Layout({ children, home }) {
   return (
@@ -14,23 +14,18 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="Dimterion's personal blog built with Next.js"
         />
-        <meta
-          property="og:image"
-          content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
-        <meta name="og:title" content={siteTitle} />
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="title" content={siteTitle} />
+        <meta name="keywords" content="Blog, Next.js, Front-End" />
+        <meta name="author" content={name} />
       </Head>
       <header className={styles.header}>
         {home ? (
           <>
             <Image
               priority
-              src="/images/profile.png"
+              src="/images/avatar.png"
               className={utilStyles.borderCircle}
               height={144}
               width={144}
@@ -44,7 +39,7 @@ export default function Layout({ children, home }) {
               <a>
                 <Image
                   priority
-                  src="/images/profile.png"
+                  src="/images/avatar.png"
                   className={utilStyles.borderCircle}
                   height={108}
                   width={108}
