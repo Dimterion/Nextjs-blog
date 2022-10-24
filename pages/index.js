@@ -22,7 +22,8 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          Hi, I'm Dmitrii. I learn Web Development, Front-End in particular.
+          Hi, I'm Dmitrii. I'm interested in Web Development (mostly Front-End
+          with a bit of Back-End) and constantly learning it.
         </p>
         <p>
           This is a blog made with{" "}
@@ -33,7 +34,34 @@ export default function Home({ allPostsData }) {
           >
             Next.js tutorial
           </a>
+          . It has some of my articles from{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://medium.com/@dimterion"
+          >
+            Medium
+          </a>
           .
+        </p>
+        <p>
+          You can also check my{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/Dimterion"
+          >
+            GitHub
+          </a>{" "}
+          and{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://twitter.com/Dimterion"
+          >
+            Twitter
+          </a>{" "}
+          profiles.
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
